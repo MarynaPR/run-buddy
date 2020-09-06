@@ -14,7 +14,7 @@
     font-style: italic;
 }
 .secondary-content {
-    width: 80px;
+    width: 80%;
     margin: 0 auto;
     color: #024e76;
 }
@@ -30,7 +30,7 @@
  .secondary-content ul {
      margin: 15px 20px;
  }
- .secondary content li {
+ .secondary-content li {
     color: #39a6b2;
     margin: 10px 0;
  }
