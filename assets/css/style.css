@@ -12,9 +12,13 @@ body {
 header {
     padding: 20px 35px;
     background-color: #39a6b2;
+    display: flex; /* flexbox applied to get elements in header back on the same horisontal line */
+    /* for column add 'flex-direction property w 'column'value */
+    justify-content: space-between; /* takes unused space */
+    flex-wrap: wrap; /* child wraps into next line */
 }
 header h1 {
-    display: inline;
+    /* display: inline; removed for flex */
     font-weight: bold;
     font-size: 36px;
     color: #fce138;
@@ -25,7 +29,7 @@ header a {
     color: #fce138;
 }
 header nav {
-    float: right;
+    /* float: right; removed for flex */
     margin: 7px 0;
 }
 header nav ul li {
