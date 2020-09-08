@@ -8,17 +8,14 @@ body {
     color: #39a6b2;
     font-family: Helvetica, Arial, sans-serif;
 }
-/* apply styles to <header> */
 header {
     padding: 20px 35px;
     background-color: #39a6b2;
-    display: flex; /* flexbox applied to get elements in header back on the same horisontal line */
-    /* for column add 'flex-direction property w 'column'value */
+    display: flex; 
     justify-content: space-between; /* takes unused space */
-    flex-wrap: wrap; /* child wraps into next line */
+    flex-wrap: wrap; 
 }
 header h1 {
-    /* display: inline; removed for flex */
     font-weight: bold;
     font-size: 36px;
     color: #fce138;
@@ -32,40 +29,32 @@ header nav {
     /* float: right; removed for flex */
     margin: 7px 0;
 }
-
 header nav ul {
     display: flex; /* evenly distributed space in parent element among children */
     flex-wrap: wrap; /* child e wrap to next line */
     justify-content: space-between;
     align-items: center;
     list-style: none; /* bullet points, dashes/indented or outdented */
-} /* add flex */
-
-/* header nav ul li {
-    display: inline;
-} remove this to add flex */
-
+} 
 header nav ul li a {
     margin: 0 30px;
     font-weight: lighter;
-    font-size: 1.55vw; /* replaced 22px -vw viewport width (viewport- actual browzers window siz)*/
+    font-size: 1.55vw;
 }
 footer {
     background: #fce138;
     width: 100%;
     padding: 40px 35px;
-    justify-content: space-between; /**/
-    flex-wrap: wrap; /**/
-    display: flex; /*added*/
+    justify-content: space-between;
+    flex-wrap: wrap;
+    display: flex;
 }
 footer h2 {
-    /* display: inline; */
     color: #024e76;
     font-size: 30px;
     margin: 0;
 }
 footer div {
-    /* float: right; */
     line-height: 1.5;
     text-align: right;
 }
@@ -74,16 +63,12 @@ footer a {
 }
 section {
     padding: 60px;
-    
 }
 /* Hero Style Start */
 .hero {
     background-image: url("../images/hero-bg.jpg");
-    /* height: 600px;*/
     background-size: cover;
     background-position: center;
-    /* position: relative; */
-    /*added below flex*/
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -109,9 +94,6 @@ section {
     width: 40%;
     color: #024e76;
     margin: 3.5%;
-    /*position: absolute;
-    bottom: 120px;
-    right: 140px;*/
 }
 .hero-form h3 {
     font-size:24px;
@@ -139,9 +121,6 @@ section {
     padding: 10px 20px;
     font-size: 16px;
 }
-/*.intro {
-    text-align: center;
-}*/
 .intro p {
     line-height: 1.7;
     color: #39a6b2;
@@ -150,23 +129,8 @@ section {
     margin: 0 auto;
     text-align: center;
 }
-/* 
-.intro h2 {
-    font-size: 55px;
-    color: #024e76;
-    margin-bottom: 35px;
-    padding: 0 100px 20px 100px;
-    border-bottom: 3px solid;
-    border-color: #fce138;
-}
-.intro h2 {
-    display: inline-block;
- */
-*/
 .steps {
-    /*text-align: center;*/
     background: #fce138;
-
 }
 .step {
     margin: 50px auto;
@@ -178,27 +142,10 @@ section {
     align-items: center;
     justify-content: space-between;
 }
-/* .steps h2 {
-    font-size: 55px;
-    color: #024e76;
-    margin-bottom: 35px;
-    padding: 0 100px 20px 100px;
-    display: inline-block;
-    border-bottom: 3px solid;
-    border-color: #39a6b2;
-} 
-.steps div {
-    margin-bottom: 80px; 
-}
-.steps img {
-    width: 15%;
-    margin: 10px 0;
-} */
 .step h3 {
     color: #024e76;
     font-size: 46px;
     flex: 1 30%;
-    /* margin-top: 10px;*/
 }
 .step-info {
     flex: 2 70%;
@@ -289,22 +236,24 @@ section {
 }
 /* REACH OUT STYLES START */
 .contact {
-    /*text-align: center;*/
     background: #024e76;
 }
 .contact h2 {
     color: #fce138;
 }
 .contact-info iframe {
-   width: 400px;
    height: 400px; 
 }
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contact-info > * {
+    flex: 1;
+    margin: 15px;
+}
 .contact-info div {
-    width: 410px;
-    display: inline-block;
-    vertical-align: top;
-    text-align:left;
-    margin: 30px 0 0 60px;
     color: white;
 }
 .contact-info h3 {
@@ -314,10 +263,30 @@ section {
 .contact-info p, .contact-info address {
     margin: 20px 0;
     line-height: 1.5;
-    font-size: 20px;
+    font-size: 16px;
     font-style: normal;
+}
+.contact-form input, .contact-form textarea {
+    border: 1px solid #024e76;
+    display:block;
+    padding: 7px 15px;
+    font-size: 16px;
+    color: #024e76;
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+.contact-form button {
+    width: 100%;
+    border: none;
+    background: #fce138;
+    color: #024e76;
+    text-align: center;
+    padding: 15px 0;
+    font-size: 16px;
 }
 .contact-info a {
     color: #fce138;
 }
+
 /* reach out styles end */
