@@ -2,26 +2,24 @@
 <html lang="en">
     
 <head>
-  <meta charset="UTF-8" name="viewpoint" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8" /> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Run Buddy</title>
  <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
 <body>
-<!-- navigation -->
+
  <header>
  <h1> 
    <a href="/">
     RUN BUDDY
    </a>
  </h1>
- <nav>
-     <a href="#service-plans">Service Plans</a>
-     <!-- Unordered list element -->
-        <ul>
-             <!-- List item element -->
-             <li>
-                 <!-- Anchor element -->
+ <!-- navigation -->
+ <nav> <!-- Unordered list element -->
+        <ul> <!-- List item element -->
+             <li> <!-- Anchor element -->
                  <a href="#what-we-do">What We Do</a>
              </li>
              <li>
@@ -32,6 +30,9 @@
              </li>
              <li>
                  <a href="#reach-out">Reach Out</a>
+              </li>
+              <li>
+                <a href="#service-plans">Service Plans</a>
               </li>
         </ul>
     </nav>
@@ -45,16 +46,19 @@
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quam repudiandae ab, neque aliquam incidunt commodi cum nemo reprehenderit distinctio! Mollitia at, velit voluptatibus consequuntur voluptatem deleniti. Corrupti, dignissimos minus.
     </p>
   </div>
+
   <div class="hero-form">
     <h3>Get Started Today</h3>
     <p>Fill out this form and one of our trainers will schedule a consult</p> <!-- Add form element -->
     <form>
-         <label for="name">Enter full name:</label>
-         <input type="text" placeholder="Your Name" name="name" id="name" class="form-input">
+         <label for="name">Your Name</label>
+         <input type="text" id="name" placeholder="Your Name" name="name" class="form-input" />
+         
          <label for="email"> Enter email address:</label>
-         <input type="email" placeholder="Email Address" name="email" id="email" class="form-input">
+         <input type="email" id="email" placeholder="Email Address" name="email" class="form-input" />
+         
          <label for="phone">Enter a telephone number:</label>
-         <input type="tel" placeholder="Phone Number" name="phone" id="phone" class="form-input">
+         <input type="tel" id="phone" placeholder="Phone Number" name="phone" class="form-input" />
      <p>
           Have you worked out with a trainer before?
           <span class="radio-wrapper">
@@ -68,18 +72,18 @@
      </p> 
      <p>
        <span class="checkbox-wrapper">
-        <input type="checkbox" name="age-confirm" id="checkbox" />
-         <label for="checkbox">I acknowledge that I am at least 18 years of age.</label>
-         </span>
+       <input type="checkbox" name="checkpoint1" id="checkbox" /> <!--name="age-confirm" -->
+       <label for="checkbox">I acknowledge that I am at least 18 years of age. </label>
+       </span>
      </p>
-     <button type="submit">
+     <button type="submit" class="form-submit">
           Get running!
      </button>       
     </form>
    </div>
  </section>
-
  <!-- end hero --> 
+
  <!-- "what we do" section -->
  <section id="what-we-do" class="intro">
  <!-- Wrap every h2 with a class of "section-title" in this div! -->
@@ -99,7 +103,7 @@
  <section id="what-you-do" class="steps">
      <!-- Wrap every h2 with a class of "section-title" in this div! -->
      <div class="flex-row">
-     <h2 class="setion-title secondary-border">What You Do</h2>
+     <h2 class="section-title secondary-border">What You Do</h2>
      </div>
 
       <div class="step">
@@ -130,7 +134,7 @@
 
       <div class="step">
          <h3>Step 3.</h3>
-         <div class="step-into">
+         <div class="step-info">
              <div class="step-img">
                 <img src="./assets/images/step-3.svg" alt="" />
              </div>
@@ -163,55 +167,56 @@
       </div>
 
       <div class="trainers">
-
         <article class="trainer">
-          <div class="trainer-img">
-            <div class=" trainer-1">
-               <div class="trainer-bio"> 
+          <div class="trainer-img trainer-1">
+            <div>
                 <h3>Arron Stephens</h3>
                 <h4>Speed / Strengh</h4>
-                <h3>Arron Stephens</h3>
-                <h4>Speed / Strengh</h4>
-               <p>
+                </div>
+                </div>
+                <div class="trainer-bio"> 
+                <h3 class="trainer-name">Arron Stephens</h3>
+                <h4 class="trainer-role">Speed / Strengh</h4>
+               
+                <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. A doloribus minima ea fugit incidunt aspernatur ab quae? Ducimus iusto eum unde quidem. Rem fuga aspernatur eum. Asperiores tenetur at debitis!
                </p>
-               </div>
-           </div>
-           </div>
+              </div>
         </article>
 
       <!-- second trainer bio -->
       <article class="trainer">
-         <div class="trainer-img">
-          <div class="trainer-2">
-          <div class="trainer-bio">
+         <div class="trainer-img trainer-2">
+         <div>
+          
          <h3>Joanna Gill</h3>
          <h4>Endurance</h4>
-         <h3>Joanna Gill</h3>
-         <h4>Endurance</h4>
+         </div>
+        </div>
+         <div class="trainer-bio">
+         <h3 class="trainer-name">Joanna Gill</h3>
+         <h4 class="trainer-role">Endurance</h4>
          <p>
              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore deleniti, perspiciatis, explicabo qui obcaecati porro error neque saepe quidem ex asperiores dolor veniam maxime voluptate fugiat, quas alias odio ut.
          </p>
        </div>
-       </div>
-      </div>
       </article>
 
       <!-- third trainer bio -->
      <article class="trainer">
       <!-- <img src="./assets/images/trainer-3.jpg" alt="Harry Smith wearing a headband and lifting comically small pink weights" /> -->
-       <div class="trainer-img">
-         <div class="trainer-3">
-         <div class="trainer-bio">
+       <div class="trainer-img trainer-3">
+         <div>
           <h3>Harry "the Headband" Smith</h3>
           <h4>Strength</h4>
-         <h3>Harry "the Headband" Smith</h3>
-          <h4>Strength</h4>
+         </div>
+        </div>
+          <div class="trainer-bio">
+          <h3 class="trainer-name">Harry "the Headband" Smith</h3>
+          <h4 class="trainer-role">Strength</h4>
          <p> 
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi assumenda recusandae, distinctio illo cupiditate quo laborum fugit autem est sint molestiae ea pariatur optio odio sequi, dolorem debitis nesciunt dolore.
-         </p>                
-        </div>
-        </div>
+         </p>               
         </div>
        </article>
    </div>
@@ -219,8 +224,13 @@
 <!-- trainer bios end --> 
 
   <section id="service-plans" class ="services">
+    <div class="flex-row">
     <h2 class="section-title secondary-border">Our Service Plans</h2>
-        <div class="service-grid-container">
+    </div>
+
+    <div class="service-grid-wrapper">
+    
+    <div class="service-grid-container">
           <!-- headers -->
            <div class="service-grid-item grid-head basic">
             Basic
@@ -228,6 +238,7 @@
            <div class="service-grid-item grid-head premium">
             Premium
            </div>
+
            <!-- body -->
            <div class="service-grid-item basic">
             Support Offered Between 9-5
@@ -245,15 +256,18 @@
              Weekly Trainer Calls
             </div>  
 
-           <div class="service-grid-item basic"
-           >N/A
+           <div class="service-grid-item basic">
+             N/A
            </div> 
 
            <div class="service-grid-item premium">
              Discount At Select Running Stores
            </div> 
 
-           <div class="service-grid-item both">Subscription to Run Buddy's Health Magazine!</div> 
+           <div class="service-grid-item both">
+             Subscription to Run Buddy's Health Magazine!
+            </div> 
+
            <div class="service-grid-item grid-price basic">
              $10/mo
             </div> 
@@ -261,24 +275,22 @@
            <div class="service-grid-item grid-price premium">
              $25/mo
             </div> 
-           <div class="service-grid-item cancel">Cancel At Any Time!</div> 
-      </div>
 
-      <div class="service-grid-wrapper">
-        <div class="service-grid-container">
-  
-        </div> <!-- div service-grid-container -->
-    </div> <!-- div service-grid-wrapper -->
+           <div class="service-grid-item cancel">
+             Cancel At Any Time!
+        </div> 
+      </div>
+    </div>
   </section>
 
  <!-- "reach out" section -->
-  <section id="reach out" class="contact">
+  <section id="reach-out" class="contact">
       <!-- Wrap every h2 with a class of "section-title" in this div! -->
       <div class="flex-row">
-     <h2 class="section-title secondary-border"></h2>
+     <h2 class="section-title secondary-border">Reach Out</h2>
       </div>
      
-     <div class="contact info">
+     <div class="contact-info">
       <div>
              <h3>Run Buddy</h3>
              <p>
@@ -286,39 +298,40 @@
                   <br />
                    Let us know and we'll be happy to talk to you!
              </p>
+
              <address>
                   55 Main Street <br/>
                   Some Town, Ca <br/>
-                  12345 <br/>
+                  12345<br/>
                   P: <a href="tel:555.786.2839">555.RUN.BUDZ (555.786.2839)</a><br />
                   E: <a href="mailto:infor@runbuddy.io">info@runbuddy.io</a>
              </address>
       </div>
-
+<!--contact form -->
       <div class="contact-form">
         <h3>Contact Us</h3>
         <form>
-            <label for="contact-name">Your Name</label>
-            <input type="text" id="contact-name" placeholder="Your Name" />
+         <label for="contact-name" class="visuallyhidden">Your Name</label>
+         <input type="text" id="contact-name" placeholder="Your Name" />
 
-            <label for="contact-message">Message</label>
-            <textarea id="contact-message" placeholder="Message"></textarea>
+        <label for="contact-message" class="visuallyhidden">Message</label>
+        <textarea id="contact-message" placeholder="Message"></textarea>
 
-            <button type="submit">Submit</button>
-           </form>
-       </div>
+        <button type="submit">Submit</button>
+        </form>
+      </div>
 
       <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2914.3980178204206!2d-89.3892606!3d43.075126900000015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88065337f44f6df3%3A0x42ac19c0002f13a1!2s137%20W%20Johnson%20St%2C%20Madison%2C%20WI%2053703!5e0!3m2!1sen!2sus!4v1599001080017!5m2!1sen!2sus" 
-                    frameborder="0"
-                    style="border:0" 
-                    allowfullscreen></iframe>
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2914.3980178204206!2d-89.3892606!3d43.075126900000015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88065337f44f6df3%3A0x42ac19c0002f13a1!2s137%20W%20Johnson%20St%2C%20Madison%2C%20WI%2053703!5e0!3m2!1sen!2sus!4v1599001080017!5m2!1sen!2sus" 
+      frameborder="0" style="border:0" allowfullscreen>
+      </iframe>
     </div>
   </section>
+  <!-- rech out end-->
 
  <!-- footer -->
   <footer>
-     <h2>❤️Made with love by Run Buddy.</h2>
+     <h2>❤️ Made with love by Run Buddy.</h2>
      <div>
         <a href="./privacy-policy.html">Read Our Privacy Policy</a><br />
          &copy; 2019 Run Buddy, Inc.
